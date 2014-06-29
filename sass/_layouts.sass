@@ -6,7 +6,7 @@
 	height: $header-h 
 	width: 100%  
 	background-color: $main-color 
-	z-index: 7
+	z-index: 70000
 	+clr
 	.phone
 		float: right
@@ -137,24 +137,232 @@
 		font-size: 50px
 		font-weight: bold	
 	.btn
-		margin-top: 19px	 
-	.detail__row
-		&.detail__row_mod
-			margin-bottom: 25px
-		.input
-			margin-right: 17px	
-	.input,.btn
-		width: 250px
-		display: inline-block 		
+		margin-top: 19px	  			
 /*-----codition-----------------------------------------*/
 .condition
+	background-color: $other-color
+	position: relative
+.condition__banks
+	position: absolute
+	top: 255px
+	right: 0px  
+.condition__top
+	background-color: $main-color
+	color: #fff 
+	.container
+		padding: 35px 110px 78px
+		text-align: center
+	.phone
+		&:hover
+			.phone__small,.phone__big
+				color: #ccc					
+	p
+		text-align: left 
+		font-size: 24px
+		line-height: 1.4
+	.mod
+		margin-bottom: 50px			
+	.phone__small,.phone__big
+		color: #fff	 
+.title
+	.ico
+		vertical-align: baseline
+	.i-tabl
+		vertical-align: bottom		
+.condition__mid
+.condition__bottom
+	text-align: center
+	margin-top: -27px 
+	.condition__titile
+		font-weight: bold
+		margin-bottom: 30px 
+		.ico
+			vertical-align: sub
+			margin-right: 10px 
+	.container
+		padding: 0 50px 0 110px 
+	p 		
+		text-align: left 
+		font-size: 24px
+		line-height: 1.2
+		margin-bottom: 35px	 
+.condition__img
+	width: 100%
 /*-----plan-----------------------------------------*/
 .plan
+	position: relative
+.plan__top
+	position: absolute
+	top: 0
+	left: 0
+	width: 100%
+	z-index: 10
+	img
+		width: 100% 
+.plan__main
+	z-index: 9
+	padding: 70px 30px 0
+	position: relative 
+	img
+		width: 100%	
+.plan__label
+	position: absolute
+	.ico
+		z-index: 10
+		position: absolute
+		left: 0
+		top: 0
+.label-1
+	top: 100px
+	left: 940px
+.label-2
+	top: 150px
+	left: 800px
+.label-3
+	top: 215px
+	left: 640px
+.label-4
+	top: 335px
+	left: 700px	
+.plan__content
+	z-index: 9
+	display: inline-block
+	padding: 1px 35px 2px 9px
+	background-color: #FFF 
+	position: absolute
+	top: 35px
+	right: -20px 
+	white-space: pre
+	+box-shadow(0px 0px 10px rgba(0,0,0,0.3))	 
+// buildinfo
+// --------------------------------------------------
+.buildinfo
+	padding-bottom: 20px
+	padding-top: 10px 
+	margin-top: -10px
+	position: relative
+	z-index: 100
+	+clr
+	.buildinfo__left
+		width: 465px
+		//margin-top: -10px
+		float: left
+	.buildinfo__center
+		width: 230px
+		//margin-top: 15px
+		float: left
+		.counter
+			margin-bottom: 10px
+	.buildinfo__right
+		width: 250px
+		padding-left: 133px
+		//margin-top: 15px
+		float: left
+	.buildinfo__house
+		font-size: 22px
+		color: $blue
+		.label
+			margin-right: 10px
+	.buildinfo__detail
+		margin-top: 18px
+		margin-left: 95px
+		font-size: 22px
+		color: $blue
+		p
+			margin-bottom: 25px
+	.counter
+		font-family: "Myriad Pro"
+		margin-top: 10px
+	.btn_choose
+		margin-top: 13px
+		height: 43px
+		line-height: 43px
+		font-size: 18px
+	.btn_main
+		height: 43px
+		line-height: 43px
+		font-size: 18px
+		margin-top: 15px 	
+.reserv
+	padding-top: 3px
+	font-size: 22px
+	color: $blue
+	.input
+		margin: 5px 0 8px
+		padding: 14px 18px 					
 /*-----map-----------------------------------------*/
 .map
+	background-color:	$other-color
+	.title
+		margin-bottom: 25px 
+		.i-tabl
+			vertical-align: bottom
+.map__top
+	img
+		width: 100% 	
+.map__google
+	margin: 60px auto 115px
+	width: 990px
+	height: 453px
+	background-color: #FFF   
 /*-----transport-----------------------------------------*/
 .transport
+	.container
+		padding: 18px 87px 40px 
+.transport__title
+	font-size: 25px
+	line-height: 0.4
+	font-family: "Myriad Pro" 
+	margin-right: 10px 
+	margin-top: 15px
+	margin-bottom: 20px 
+	.ico
+		margin-right: 5px
+	.small	 
+		font-size: 16px
+		line-height: 10px
+		padding-left: 45px
+.transport__title_mod
+	margin-bottom: 30px 		 
+.transport__content
+	font-family: "Myriad Pro" 
+	padding-left: 17px 	 
+.transport__content_i	
+	padding-left: 0
+	margin-top: 0px	
 /*-----contact-----------------------------------------*/
 .contact
+	background-color: $main-color
+	p
+		color: #FFF 
+		font-size: 24px
+	.row
+		text-align: center
+	.input
+		vertical-align: 2px
+	.container
+		padding: 35px 100px 		 
+.contact__phones
+	color: #FFF 
+	margin: 20px 0 
+.contact__item
+	color: #FFF 
+	font-size: 24px
+	.ico
+		margin-right: 15px 
+	span
+		//font-weight: bold	
+		font-size: 30px
 /*-----photo-----------------------------------------*/
 .photo
+	padding: 20px
+	.title
+		margin-bottom: 20px
+		.ico
+			vertical-align: bottom
+			margin-right: 5px 
+.photo__item
+	margin: 0 auto
+	width: 900px
+	height: 500px
+	border: 1px solid #000
