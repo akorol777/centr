@@ -1,0 +1,160 @@
+/*-----header-----------------------------------*/
+.header
+	position: fixed
+	top: 0
+	left: 0 
+	height: $header-h 
+	width: 100%  
+	background-color: $main-color 
+	z-index: 7
+	+clr
+	.phone
+		float: right
+		color: $other-color
+		&:hover
+			.phone__small,.phone__big
+				color: $other-color+#202020		
+.header__head				   
+	padding: 12px 28px 0px 37px 
+.header__right
+	float: right
+	+clr 
+.header__adress			
+	float: right
+	margin: 12px 70px 0px 0px 
+.header__roll
+.header__adressmail
+	&:hover
+		text-decoration: underline
+	.ico
+		vertical-align: middle
+		margin-right: 4px 	
+.header__roll,.header__adressmail			
+	color: #f5f5f5
+	font:
+		size: 12px
+		family: "Myriad Pro"
+	line-height: 14px 	
+/*-----send-------------------------------------------*/
+.send	
+	margin-top: $header-h
+	height: $send-h
+	background-image: url(../img/send.jpg) 
+	position: relative
+	+cover
+.send__popup
+	top: 50%
+	left: -100% 	
+	position: absolute
+	margin-top: -$popup-h/2
+	margin-left: -$popup-w/2  
+	height: $popup-h
+	line-height: $popup-h  
+	width: $popup-w 
+	background-color: $other-color
+	padding: 0 15px  
+	+box
+	+border-radius(10%)
+	+transition(0.6s)
+	+transform(rotate(-720deg))	
+.send__popup-active		
+	+transform(rotate(720deg)) 
+	left: 50%
+.send__popupcontent	  	
+	font-size: 22px
+	line-height: 22px
+	text-align: center
+	display: inline-block
+	vertical-align: middle
+.send__popupclose	
+	position: absolute
+	bottom: 10px
+	right: 15px 
+	line-height: 10px 
+.send__label
+	position: absolute
+	top: 255px
+	left: 0   
+.send__form
+	width: 250px
+	padding: 10px 25px 25px
+	background: #F5F5F5 
+	background: rgba(#f5f5f5, .85)
+	+border-radius(10px)
+	+box-shadow(0 0 20px rgba(#000, .25))
+	position: absolute
+	top: 160px
+	right: 85px
+.send__formmeta
+	margin-top: 13px
+	font-size: 24px
+.send__forminput
+	width: 212px
+	padding: 14px 20px 8px
+	margin-top: 11px
+	margin-bottom: 20px
+	display: block
+	background: #DFF2FF 
+	+gd(160deg, #fff,#d7efff)
+	border: 1px solid #f2f5f6
+	+border-radius(10px)
+	font-size: 12px
+	color: #2a445e
+	+placeholder-color(#2a445e)
+	+box-shadow(inset 4px 4px 4px rgba(#5f6c79, .4))
+	&:focus
+		+placeholder-color(transparent)	
+/*-----benefits-----------------------------------------*/
+.benefits
+	background: $other-color 
+.benefits__img
+	width: 100%
+.benefits__content
+	font-size: 22px
+	line-height: 29px 
+	padding: 14px 135px 20px 107px
+	text-align: center 
+/*-----detail-out-----------------------------------------*/
+.detail-out
+.detail
+	width: 520px 
+	margin: 0 auto
+	padding: 20px 0 20px  
+.detail
+	padding-bottom: 35px
+	text-align: center
+	p
+		font-size: 24px
+		line-height: 1.2
+	.phone
+		display: inline-block
+		margin: 6px 0 8px
+		.ico
+			vertical-align: baseline	
+	.phone__small
+		font-size: 30px
+	.phone__big
+		font-size: 50px
+		font-weight: bold	
+	.btn
+		margin-top: 19px	 
+	.detail__row
+		&.detail__row_mod
+			margin-bottom: 25px
+		.input
+			margin-right: 17px	
+	.input,.btn
+		width: 250px
+		display: inline-block 		
+/*-----codition-----------------------------------------*/
+.condition
+/*-----plan-----------------------------------------*/
+.plan
+/*-----map-----------------------------------------*/
+.map
+/*-----transport-----------------------------------------*/
+.transport
+/*-----contact-----------------------------------------*/
+.contact
+/*-----photo-----------------------------------------*/
+.photo
