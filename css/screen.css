@@ -71,11 +71,37 @@ a { text-decoration: none; }
 .send__forminput:focus::-webkit-input-placeholder { color: transparent; }
 
 /*-----benefits----------------------------------------- */
-.benefits { background: #ffe200; }
+.benefits { background: #ffe200; position: relative; }
+.benefits .first { top: 30.5%; left: 3.5%; }
+.benefits .second { top: 35%; left: 12%; }
+.benefits .third { top: 27.8%; left: 17.5%; }
+.benefits .fourth { top: 36.5%; left: 22%; }
+.benefits .fifth { top: 28%; left: 35.5%; }
+.benefits .price { top: 24.5%; left: 62%; font-size: 28px; }
+.benefits .infr { top: 35%; left: 71%; font-size: 20px; }
+.benefits .plans { top: 51.5%; left: 71%; font-size: 24px; }
+.benefits .comf { top: 61.5%; left: 61%; font-size: 24px; }
+.benefits .teh { top: 51%; left: 48.5%; font-size: 20px; line-height: 25px; text-align: right; }
+.benefits .location { top: 35%; left: 47%; font-size: 24px; }
+.benefits .prices { top: 16.5%; left: 83%; }
+.benefits .infrastructure { top: 34%; left: 85%; }
+.benefits .lay { top: 58%; left: 83%; }
+.benefits .comfort { top: 62%; left: 31%; text-align: right; }
+.benefits .transport { background: #b7b7b7; width: 310px; padding: 5px 15px; left: 0; top: 60%; color: white; font-size: 16px; line-height: 14px; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
 
 .benefits__img { width: 100%; }
 
 .benefits__content { font-size: 22px; line-height: 29px; padding: 14px 135px 20px 107px; text-align: center; }
+
+.benefits__info { position: absolute; display: inline-block; }
+
+.benefits__info_mod { color: white; }
+
+.benefits__small { font-size: 11px; }
+
+.benefits__normal { font-size: 15px; }
+
+.benefits__big { padding-left: 7px; font-size: 21px; line-height: 29px; }
 
 /*-----detail-out----------------------------------------- */
 .detail { width: 520px; margin: 0 auto; padding: 20px 0 20px; }
@@ -90,8 +116,11 @@ a { text-decoration: none; }
 
 /*-----codition----------------------------------------- */
 .condition { background-color: #ffe200; position: relative; }
+.condition .first { margin-bottom: 70px; margin-right: 0; }
 
 .condition__banks { position: absolute; top: 255px; right: 0px; }
+
+.condition__roll { display: block; text-align: right; margin-bottom: 8px; margin-right: 20px; }
 
 .condition__top { background-color: #100310; color: white; }
 .condition__top .container { padding: 35px 110px 78px; text-align: center; }
