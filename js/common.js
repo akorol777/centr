@@ -21,6 +21,14 @@ $(function() {
       return false;
     });
   });
+$(function() {
+    $( ".btn-popup2" ).click(function() {
+      $( ".popup" ).toggleClass( "popup-active");
+      return false;
+    });
+  });
+
+
 
 
 });

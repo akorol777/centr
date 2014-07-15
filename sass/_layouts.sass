@@ -37,7 +37,6 @@
 	line-height: 14px 	
 /*-----send-------------------------------------------*/
 .send	
-	margin-top: $header-h
 	height: $send-h
 	background-image: url(../img/send.jpg) 
 	position: relative
@@ -191,7 +190,7 @@
 .benefits__big
 	padding-left: 7px	
 	font-size: 21px
-	line-height: 29px		
+	line-height: 29px			
 /*-----detail-out-----------------------------------------*/
 .detail-out
 .detail
@@ -384,8 +383,12 @@
 		.i-tabl
 			vertical-align: bottom
 .map__top
+	position: relative
 	img
-		width: 100% 	
+		width: 100%
+	.angle-medium
+		top: 60px
+		margin-left: 10px	 	
 .map__google
 	margin: 60px auto 115px
 	width: 990px
@@ -452,3 +455,189 @@
 	width: 900px
 	height: 500px
 	border: 1px solid #000
+/*-----angle-----------------------------------------------------*/
+.angle
+	text-align: center
+	position: absolute
+	width: 100% 
+	+transform(rotate(-2.3deg))
+	p
+		+box
+.angle-big		
+	text-transform: uppercase
+	top: 10px
+	left: 0
+	font: 
+		size: 88px
+		weight: bold
+		family: "Myriad Pro" 
+	p
+		letter-spacing: -0.06em
+.angle-medium
+	font:
+		size: 40px
+		family: "Myriad Pro"
+	+transform(rotate(-3deg))				
+	color: #FFF
+	text-transform: uppercase
+	top: 66px  		 
+.angle-normal
+	bottom: 158px
+	font:
+		size: 36px
+		family: "Myriad Pro"		
+	color: #FFF 
+.angle-small	
+	top: 115px
+	color: #FFF
+	font-size: 32px
+	text-align: left
+	p
+		width: 1180px
+		margin: 0 auto 
+		padding-left: 60px	
+/*-----selapartaments --------------------------------------------------	*/
+.selapartaments
+	padding-bottom: 16px
+	background: #eeeeee 
+	+box-shadow(inset 0px 1px 20px rgba(#000, .2), inset 0px -1px 8px rgba(#000, .2))
+	.selapartaments__meta
+		padding-top: 94px
+		margin-bottom: 35px
+		font:
+			size: 45px
+			weight: bold
+		color: $main-color
+		text-align: center
+		span
+			margin-left: 12px
+	.selapartaments__row
+		margin-bottom: 25px
+		padding: 0 50px 
+		+clr
+	.selapartaments__label1
+		width: 515px
+		float: left
+	.selapartaments__label2
+		width: 555px
+		float: left
+		.input
+			border: 1px solid #ABABAB	
+			width: 105px		
+	.selapartaments__descr
+		position: relative
+		top: -10px
+		margin-right: 30px
+		display: inline-block
+		font-size: 24px
+		color: $main-color
+	.selapartaments__inproup
+		display: inline-block
+	.btn
+		width: 190px
+		display: block
+		margin-left: auto
+		margin-right: auto
+/*----- table-------------------------------------------------*/
+.table
+	min-height: 700px
+	margin: 25px 0
+	.container
+		width: 1075px
+	thead
+		background: $other-color
+		color: $main-color
+		td
+			font-size: 26px
+			height: 40px
+			vertical-align: middle
+			text-align: center
+			border-right: 1px solid $main-color
+			border-top: 1px solid $main-color
+			&:first-child
+				border-left: 1px solid $main-color
+	tbody
+		min-height: 600px
+		border-bottom: 1px solid $main-color
+		color: $main-color
+		text-align: center
+		td
+			height: 40px
+			border-right: 1px solid $main-color
+			vertical-align: middle
+			&:first-child
+				border-left: 1px solid $main-color
+/*-----checkbox--------------------------------------------------*/
+.checkbox
+	width: 65px
+	display: inline-block
+	position: relative
+	font-size: 25px
+	color: $main-color
+	margin-right: 10px
+	input
+		+opacity(0)
+	input + .checkbox__ico
+		+s(i-ch)
+		position: absolute
+		top: 0px
+		left: 20px
+	input:checked + .checkbox__ico
+		+s(i-ch_a)
+.inputgroup
+	display: inline-block
+	vertical-align: middle
+	font-size: 25px
+	color: $main-color
+	&.inputgroup_first
+		margin-right: 10px
+	span
+		margin-right: 10px
+/*-----ranger----------------------------------------------*/
+.ranger
+	width: 185px
+	height: 4px
+	margin-right: 5px
+	background: #FFF 
+	display: inline-block
+	vertical-align: middle
+	position: relative
+	.ranger__min, .ranger__max
+		width: 22px
+		height: 22px
+		+border-radius(50%)
+		background: #ff1532
+		position: absolute
+		top: -10px
+	.ranger__corner
+		height: 4px
+		background: #ff1532
+		position: absolute	
+/*popup-------------------------------------------------*/
+.popup
+	width: 330px
+	padding: 50px 20px
+	background: #E7E8E8
+	+gd(90deg, #FBFCFC 1%, #E5E6E7 20%)
+	+border-radius(10px)
+	position: absolute
+	text-align: center
+	z-index: 1 
+	+box-shadow(0px 0px 10px rgba(0,0,0,0.3))
+	left: 50%
+	margin-left: -165px 
+	top: -500px
+	+transition(0.4s)
+	.popup__input
+		margin-bottom: 5px
+		+box-shadow(none) 
+		color: $main-color
+	.popup__btn
+		width: 190px
+		margin-bottom: 30px
+		display: inline-block
+	.popup__note
+		color: $main-color
+		font-size: 21px
+.popup-active
+	top: 415px		 
